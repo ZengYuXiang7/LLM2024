@@ -1,0 +1,17 @@
+INFO:gru:|2024-06-04 02:32:30| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'gru', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 1, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f94981991c0>}
+INFO:gru:|2024-06-04 02:32:30| ********************Experiment Start********************
+INFO:gru:|2024-06-04 02:34:37| Round=1 BestEpoch=366 MAE=0.0004 RMSE=0.0005 NMAE=0.0744 NRMSE=0.0921 Training_time=78.4 s 
+INFO:gru:|2024-06-04 02:34:37| Acc = [1%=0.0871, 5%=0.4178, 10%=0.7072] 
+INFO:gru:|2024-06-04 02:36:05| Round=2 BestEpoch=189 MAE=0.0004 RMSE=0.0005 NMAE=0.0750 NRMSE=0.0903 Training_time=59.0 s 
+INFO:gru:|2024-06-04 02:36:05| Acc = [1%=0.0871, 5%=0.3971, 10%=0.7118] 
+INFO:gru:|2024-06-04 02:37:55| Round=3 BestEpoch=136 MAE=0.0004 RMSE=0.0005 NMAE=0.0748 NRMSE=0.0937 Training_time=11.0 s 
+INFO:gru:|2024-06-04 02:37:55| Acc = [1%=0.0892, 5%=0.4145, 10%=0.7168] 
+INFO:gru:|2024-06-04 02:37:55| ********************Experiment Results:********************
+INFO:gru:|2024-06-04 02:37:55| MAE: 0.0004 ± 0.0000
+INFO:gru:|2024-06-04 02:37:55| RMSE: 0.0005 ± 0.0000
+INFO:gru:|2024-06-04 02:37:55| NMAE: 0.0747 ± 0.0002
+INFO:gru:|2024-06-04 02:37:55| NRMSE: 0.0920 ± 0.0014
+INFO:gru:|2024-06-04 02:37:55| Acc_1: 0.0878 ± 0.0010
+INFO:gru:|2024-06-04 02:37:55| Acc_5: 0.4098 ± 0.0091
+INFO:gru:|2024-06-04 02:37:55| Acc_10: 0.7120 ± 0.0039
+INFO:gru:|2024-06-04 02:37:56| ********************Experiment Success********************

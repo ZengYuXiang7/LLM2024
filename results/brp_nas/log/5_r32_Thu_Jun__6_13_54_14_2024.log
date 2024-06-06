@@ -1,0 +1,21 @@
+INFO:brp_nas:|2024-06-06 13:54:14| {'seed': 0, 'device': 'mps', 'rounds': 5, 'epochs': 500, 'patience': 10, 'dataset': 'cpu', 'model': 'brp_nas', 'density': 0.05, 'train_size': 5, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 1, 'path': './datasets/', 'bs': 1, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f8ee8c46c70>}
+INFO:brp_nas:|2024-06-06 13:54:14| ********************Experiment Start********************
+INFO:brp_nas:|2024-06-06 13:54:31| Round=1 BestEpoch=14 MAE=0.0020 RMSE=0.0024 NMAE=0.4036 NRMSE=0.4610 Training_time=1.7 s 
+INFO:brp_nas:|2024-06-06 13:54:31| Acc = [1%=0.0056, 5%=0.0505, 10%=0.1101] 
+INFO:brp_nas:|2024-06-06 13:54:47| Round=2 BestEpoch=13 MAE=0.0019 RMSE=0.0023 NMAE=0.3808 NRMSE=0.4404 Training_time=1.2 s 
+INFO:brp_nas:|2024-06-06 13:54:47| Acc = [1%=0.0028, 5%=0.0671, 10%=0.1654] 
+INFO:brp_nas:|2024-06-06 13:54:59| Round=3 BestEpoch=8 MAE=0.0026 RMSE=0.0030 NMAE=0.5218 NRMSE=0.5739 Training_time=0.7 s 
+INFO:brp_nas:|2024-06-06 13:54:59| Acc = [1%=0.0072, 5%=0.0420, 10%=0.1021] 
+INFO:brp_nas:|2024-06-06 13:55:08| Round=4 BestEpoch=1 MAE=0.0015 RMSE=0.0019 NMAE=0.3043 NRMSE=0.3609 Training_time=0.1 s 
+INFO:brp_nas:|2024-06-06 13:55:08| Acc = [1%=0.0268, 5%=0.0929, 10%=0.1987] 
+INFO:brp_nas:|2024-06-06 13:55:18| Round=5 BestEpoch=3 MAE=0.0018 RMSE=0.0022 NMAE=0.3620 NRMSE=0.4245 Training_time=0.3 s 
+INFO:brp_nas:|2024-06-06 13:55:18| Acc = [1%=0.0224, 5%=0.1321, 10%=0.2528] 
+INFO:brp_nas:|2024-06-06 13:55:18| ********************Experiment Results:********************
+INFO:brp_nas:|2024-06-06 13:55:18| MAE: 0.0019 ± 0.0004
+INFO:brp_nas:|2024-06-06 13:55:18| RMSE: 0.0023 ± 0.0004
+INFO:brp_nas:|2024-06-06 13:55:18| NMAE: 0.3945 ± 0.0717
+INFO:brp_nas:|2024-06-06 13:55:18| NRMSE: 0.4521 ± 0.0695
+INFO:brp_nas:|2024-06-06 13:55:18| Acc_1: 0.0130 ± 0.0097
+INFO:brp_nas:|2024-06-06 13:55:18| Acc_5: 0.0769 ± 0.0326
+INFO:brp_nas:|2024-06-06 13:55:18| Acc_10: 0.1658 ± 0.0562
+INFO:brp_nas:|2024-06-06 13:55:20| ********************Experiment Success********************

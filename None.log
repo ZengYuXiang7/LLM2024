@@ -1,0 +1,414 @@
+INFO:mlp:|2024-06-05 19:32:54| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 5, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f898973e1f0>}
+INFO:mlp:|2024-06-05 19:32:54| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:32:57| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 50, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fa100a66d30>}
+INFO:mlp:|2024-06-05 19:32:57| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:34:02| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 5, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7ff0d97cddf0>}
+INFO:mlp:|2024-06-05 19:34:02| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:34:05| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 50, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fb851e84df0>}
+INFO:mlp:|2024-06-05 19:34:05| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:34:07| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 100, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f9018f84d00>}
+INFO:mlp:|2024-06-05 19:34:07| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:34:57| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 5, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f7ea9386310>}
+INFO:mlp:|2024-06-05 19:34:57| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:35:00| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 50, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7ff20988edc0>}
+INFO:mlp:|2024-06-05 19:35:00| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:35:02| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 100, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f9a68464e80>}
+INFO:mlp:|2024-06-05 19:35:02| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:35:15| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7ff4296e6d30>}
+INFO:mlp:|2024-06-05 19:35:15| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:35:58| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f81012a5d00>}
+INFO:mlp:|2024-06-05 19:35:58| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:36:14| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f9478254d60>}
+INFO:mlp:|2024-06-05 19:36:14| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:37:09| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f7999b34d00>}
+INFO:mlp:|2024-06-05 19:37:09| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:37:33| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fc191096c40>}
+INFO:mlp:|2024-06-05 19:37:33| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:38:06| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fc369b42d90>}
+INFO:mlp:|2024-06-05 19:38:06| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:38:12| Round=1 BestEpoch=72 MAE=0.0005 RMSE=0.0007 NMAE=0.1070 NRMSE=0.1285 Training_time=2.2 s 
+INFO:mlp:|2024-06-05 19:38:12| Acc = [1%=0.0619, 5%=0.2979, 10%=0.5503] 
+INFO:mlp:|2024-06-05 19:38:21| Round=2 BestEpoch=132 MAE=0.0005 RMSE=0.0007 NMAE=0.1122 NRMSE=0.1330 Training_time=4.0 s 
+INFO:mlp:|2024-06-05 19:38:21| Acc = [1%=0.0592, 5%=0.2833, 10%=0.5331] 
+INFO:mlp:|2024-06-05 19:38:28| Round=3 BestEpoch=92 MAE=0.0005 RMSE=0.0007 NMAE=0.1057 NRMSE=0.1272 Training_time=2.9 s 
+INFO:mlp:|2024-06-05 19:38:28| Acc = [1%=0.0609, 5%=0.3007, 10%=0.5533] 
+INFO:mlp:|2024-06-05 19:38:28| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:38:28| MAE: 0.0005 ± 0.0000
+INFO:mlp:|2024-06-05 19:38:28| RMSE: 0.0007 ± 0.0000
+INFO:mlp:|2024-06-05 19:38:28| NMAE: 0.1083 ± 0.0028
+INFO:mlp:|2024-06-05 19:38:28| NRMSE: 0.1296 ± 0.0025
+INFO:mlp:|2024-06-05 19:38:28| Acc_1: 0.0607 ± 0.0011
+INFO:mlp:|2024-06-05 19:38:28| Acc_5: 0.2940 ± 0.0076
+INFO:mlp:|2024-06-05 19:38:28| Acc_10: 0.5456 ± 0.0089
+INFO:mlp:|2024-06-05 19:38:28| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:39:22| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f916905ad60>}
+INFO:mlp:|2024-06-05 19:39:22| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:39:29| Round=1 BestEpoch=72 MAE=0.0005 RMSE=0.0007 NMAE=0.1070 NRMSE=0.1285 Training_time=2.3 s 
+INFO:mlp:|2024-06-05 19:39:29| Acc = [1%=0.0619, 5%=0.2979, 10%=0.5503] 
+INFO:mlp:|2024-06-05 19:39:38| Round=2 BestEpoch=132 MAE=0.0005 RMSE=0.0007 NMAE=0.1122 NRMSE=0.1330 Training_time=4.0 s 
+INFO:mlp:|2024-06-05 19:39:38| Acc = [1%=0.0592, 5%=0.2833, 10%=0.5331] 
+INFO:mlp:|2024-06-05 19:39:45| Round=3 BestEpoch=92 MAE=0.0005 RMSE=0.0007 NMAE=0.1057 NRMSE=0.1272 Training_time=2.8 s 
+INFO:mlp:|2024-06-05 19:39:45| Acc = [1%=0.0609, 5%=0.3007, 10%=0.5533] 
+INFO:mlp:|2024-06-05 19:39:45| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:39:45| MAE: 0.0005 ± 0.0000
+INFO:mlp:|2024-06-05 19:39:45| RMSE: 0.0007 ± 0.0000
+INFO:mlp:|2024-06-05 19:39:45| NMAE: 0.1083 ± 0.0028
+INFO:mlp:|2024-06-05 19:39:45| NRMSE: 0.1296 ± 0.0025
+INFO:mlp:|2024-06-05 19:39:45| Acc_1: 0.0607 ± 0.0011
+INFO:mlp:|2024-06-05 19:39:45| Acc_5: 0.2940 ± 0.0076
+INFO:mlp:|2024-06-05 19:39:45| Acc_10: 0.5456 ± 0.0089
+INFO:mlp:|2024-06-05 19:39:45| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:40:34| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f9b295cccd0>}
+INFO:mlp:|2024-06-05 19:40:34| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:40:41| Round=1 BestEpoch=72 MAE=0.0005 RMSE=0.0007 NMAE=0.1070 NRMSE=0.1285 Training_time=2.3 s 
+INFO:mlp:|2024-06-05 19:40:41| Acc = [1%=0.0619, 5%=0.2979, 10%=0.5503] 
+INFO:mlp:|2024-06-05 19:40:50| Round=2 BestEpoch=132 MAE=0.0005 RMSE=0.0007 NMAE=0.1122 NRMSE=0.1330 Training_time=4.1 s 
+INFO:mlp:|2024-06-05 19:40:50| Acc = [1%=0.0592, 5%=0.2833, 10%=0.5331] 
+INFO:mlp:|2024-06-05 19:40:57| Round=3 BestEpoch=92 MAE=0.0005 RMSE=0.0007 NMAE=0.1057 NRMSE=0.1272 Training_time=2.8 s 
+INFO:mlp:|2024-06-05 19:40:57| Acc = [1%=0.0609, 5%=0.3007, 10%=0.5533] 
+INFO:mlp:|2024-06-05 19:40:57| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:40:57| MAE: 0.0005 ± 0.0000
+INFO:mlp:|2024-06-05 19:40:57| RMSE: 0.0007 ± 0.0000
+INFO:mlp:|2024-06-05 19:40:57| NMAE: 0.1083 ± 0.0028
+INFO:mlp:|2024-06-05 19:40:57| NRMSE: 0.1296 ± 0.0025
+INFO:mlp:|2024-06-05 19:40:57| Acc_1: 0.0607 ± 0.0011
+INFO:mlp:|2024-06-05 19:40:57| Acc_5: 0.2940 ± 0.0076
+INFO:mlp:|2024-06-05 19:40:57| Acc_10: 0.5456 ± 0.0089
+INFO:mlp:|2024-06-05 19:40:57| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:44:39| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f80d139ecd0>}
+INFO:mlp:|2024-06-05 19:44:39| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:44:50| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 0, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fbfda09dca0>}
+INFO:mlp:|2024-06-05 19:44:50| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:45:04| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fa9e14f5cd0>}
+INFO:mlp:|2024-06-05 19:45:04| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:45:10| Round=1 BestEpoch=72 MAE=0.0005 RMSE=0.0007 NMAE=0.1070 NRMSE=0.1285 Training_time=2.2 s 
+INFO:mlp:|2024-06-05 19:45:10| Acc = [1%=0.0619, 5%=0.2979, 10%=0.5503] 
+INFO:mlp:|2024-06-05 19:45:19| Round=2 BestEpoch=132 MAE=0.0005 RMSE=0.0007 NMAE=0.1122 NRMSE=0.1330 Training_time=3.9 s 
+INFO:mlp:|2024-06-05 19:45:19| Acc = [1%=0.0592, 5%=0.2833, 10%=0.5331] 
+INFO:mlp:|2024-06-05 19:45:26| Round=3 BestEpoch=92 MAE=0.0005 RMSE=0.0007 NMAE=0.1057 NRMSE=0.1272 Training_time=2.7 s 
+INFO:mlp:|2024-06-05 19:45:26| Acc = [1%=0.0609, 5%=0.3007, 10%=0.5533] 
+INFO:mlp:|2024-06-05 19:45:26| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:45:26| MAE: 0.0005 ± 0.0000
+INFO:mlp:|2024-06-05 19:45:26| RMSE: 0.0007 ± 0.0000
+INFO:mlp:|2024-06-05 19:45:26| NMAE: 0.1083 ± 0.0028
+INFO:mlp:|2024-06-05 19:45:26| NRMSE: 0.1296 ± 0.0025
+INFO:mlp:|2024-06-05 19:45:26| Acc_1: 0.0607 ± 0.0011
+INFO:mlp:|2024-06-05 19:45:26| Acc_5: 0.2940 ± 0.0076
+INFO:mlp:|2024-06-05 19:45:26| Acc_10: 0.5456 ± 0.0089
+INFO:mlp:|2024-06-05 19:45:27| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:50:23| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f8799034c70>}
+INFO:mlp:|2024-06-05 19:50:23| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:50:29| Round=1 BestEpoch=72 MAE=0.0005 RMSE=0.0007 NMAE=0.1070 NRMSE=0.1285 Training_time=2.2 s 
+INFO:mlp:|2024-06-05 19:50:29| Acc = [1%=0.0619, 5%=0.2979, 10%=0.5503] 
+INFO:mlp:|2024-06-05 19:50:38| Round=2 BestEpoch=132 MAE=0.0005 RMSE=0.0007 NMAE=0.1122 NRMSE=0.1330 Training_time=3.9 s 
+INFO:mlp:|2024-06-05 19:50:38| Acc = [1%=0.0592, 5%=0.2833, 10%=0.5331] 
+INFO:mlp:|2024-06-05 19:50:45| Round=3 BestEpoch=92 MAE=0.0005 RMSE=0.0007 NMAE=0.1057 NRMSE=0.1272 Training_time=2.7 s 
+INFO:mlp:|2024-06-05 19:50:45| Acc = [1%=0.0609, 5%=0.3007, 10%=0.5533] 
+INFO:mlp:|2024-06-05 19:50:45| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:50:45| MAE: 0.0005 ± 0.0000
+INFO:mlp:|2024-06-05 19:50:45| RMSE: 0.0007 ± 0.0000
+INFO:mlp:|2024-06-05 19:50:45| NMAE: 0.1083 ± 0.0028
+INFO:mlp:|2024-06-05 19:50:45| NRMSE: 0.1296 ± 0.0025
+INFO:mlp:|2024-06-05 19:50:45| Acc_1: 0.0607 ± 0.0011
+INFO:mlp:|2024-06-05 19:50:45| Acc_5: 0.2940 ± 0.0076
+INFO:mlp:|2024-06-05 19:50:45| Acc_10: 0.5456 ± 0.0089
+INFO:mlp:|2024-06-05 19:50:46| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:53:21| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 5, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fe168963d30>}
+INFO:mlp:|2024-06-05 19:53:21| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:53:23| Round=1 BestEpoch=3 MAE=0.0017 RMSE=0.0020 NMAE=0.3410 NRMSE=0.3945 Training_time=0.1 s 
+INFO:mlp:|2024-06-05 19:53:23| Acc = [1%=0.0148, 5%=0.0729, 10%=0.1478] 
+INFO:mlp:|2024-06-05 19:53:25| Round=2 BestEpoch=71 MAE=0.0016 RMSE=0.0019 NMAE=0.3256 NRMSE=0.3757 Training_time=0.1 s 
+INFO:mlp:|2024-06-05 19:53:25| Acc = [1%=0.0173, 5%=0.0783, 10%=0.1540] 
+INFO:mlp:|2024-06-05 19:53:26| Round=3 BestEpoch=1 MAE=0.0016 RMSE=0.0020 NMAE=0.3330 NRMSE=0.3911 Training_time=0.0 s 
+INFO:mlp:|2024-06-05 19:53:26| Acc = [1%=0.0269, 5%=0.1325, 10%=0.2375] 
+INFO:mlp:|2024-06-05 19:53:26| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:53:26| MAE: 0.0016 ± 0.0000
+INFO:mlp:|2024-06-05 19:53:26| RMSE: 0.0020 ± 0.0000
+INFO:mlp:|2024-06-05 19:53:26| NMAE: 0.3332 ± 0.0063
+INFO:mlp:|2024-06-05 19:53:26| NRMSE: 0.3871 ± 0.0082
+INFO:mlp:|2024-06-05 19:53:26| Acc_1: 0.0197 ± 0.0052
+INFO:mlp:|2024-06-05 19:53:26| Acc_5: 0.0946 ± 0.0269
+INFO:mlp:|2024-06-05 19:53:26| Acc_10: 0.1798 ± 0.0409
+INFO:mlp:|2024-06-05 19:53:28| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:53:30| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 50, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f9171dcec40>}
+INFO:mlp:|2024-06-05 19:53:30| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:53:44| Round=1 BestEpoch=500 MAE=0.0008 RMSE=0.0010 NMAE=0.1624 NRMSE=0.2001 Training_time=2.0 s 
+INFO:mlp:|2024-06-05 19:53:44| Acc = [1%=0.0464, 5%=0.2259, 10%=0.4193] 
+INFO:mlp:|2024-06-05 19:53:48| Round=2 BestEpoch=81 MAE=0.0007 RMSE=0.0009 NMAE=0.1461 NRMSE=0.1765 Training_time=0.3 s 
+INFO:mlp:|2024-06-05 19:53:48| Acc = [1%=0.0458, 5%=0.2259, 10%=0.4284] 
+INFO:mlp:|2024-06-05 19:54:02| Round=3 BestEpoch=500 MAE=0.0010 RMSE=0.0013 NMAE=0.2035 NRMSE=0.2458 Training_time=2.0 s 
+INFO:mlp:|2024-06-05 19:54:02| Acc = [1%=0.0365, 5%=0.1777, 10%=0.3386] 
+INFO:mlp:|2024-06-05 19:54:02| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:54:02| MAE: 0.0008 ± 0.0001
+INFO:mlp:|2024-06-05 19:54:02| RMSE: 0.0011 ± 0.0002
+INFO:mlp:|2024-06-05 19:54:02| NMAE: 0.1707 ± 0.0242
+INFO:mlp:|2024-06-05 19:54:02| NRMSE: 0.2075 ± 0.0288
+INFO:mlp:|2024-06-05 19:54:02| Acc_1: 0.0429 ± 0.0045
+INFO:mlp:|2024-06-05 19:54:02| Acc_5: 0.2098 ± 0.0227
+INFO:mlp:|2024-06-05 19:54:02| Acc_10: 0.3954 ± 0.0404
+INFO:mlp:|2024-06-05 19:54:03| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:54:05| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 100, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f9a41b56be0>}
+INFO:mlp:|2024-06-05 19:54:05| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:54:08| Round=1 BestEpoch=48 MAE=0.0007 RMSE=0.0009 NMAE=0.1474 NRMSE=0.1791 Training_time=0.4 s 
+INFO:mlp:|2024-06-05 19:54:08| Acc = [1%=0.0494, 5%=0.2337, 10%=0.4312] 
+INFO:mlp:|2024-06-05 19:54:11| Round=2 BestEpoch=66 MAE=0.0007 RMSE=0.0008 NMAE=0.1357 NRMSE=0.1610 Training_time=0.5 s 
+INFO:mlp:|2024-06-05 19:54:11| Acc = [1%=0.0456, 5%=0.2327, 10%=0.4471] 
+INFO:mlp:|2024-06-05 19:54:18| Round=3 BestEpoch=168 MAE=0.0008 RMSE=0.0010 NMAE=0.1624 NRMSE=0.1983 Training_time=1.2 s 
+INFO:mlp:|2024-06-05 19:54:18| Acc = [1%=0.0445, 5%=0.2108, 10%=0.4010] 
+INFO:mlp:|2024-06-05 19:54:18| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:54:18| MAE: 0.0007 ± 0.0001
+INFO:mlp:|2024-06-05 19:54:18| RMSE: 0.0009 ± 0.0001
+INFO:mlp:|2024-06-05 19:54:18| NMAE: 0.1485 ± 0.0109
+INFO:mlp:|2024-06-05 19:54:18| NRMSE: 0.1795 ± 0.0152
+INFO:mlp:|2024-06-05 19:54:18| Acc_1: 0.0465 ± 0.0021
+INFO:mlp:|2024-06-05 19:54:18| Acc_5: 0.2258 ± 0.0106
+INFO:mlp:|2024-06-05 19:54:18| Acc_10: 0.4264 ± 0.0191
+INFO:mlp:|2024-06-05 19:54:19| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:54:21| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fd3f1266c70>}
+INFO:mlp:|2024-06-05 19:54:21| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:54:27| Round=1 BestEpoch=72 MAE=0.0005 RMSE=0.0007 NMAE=0.1070 NRMSE=0.1285 Training_time=2.2 s 
+INFO:mlp:|2024-06-05 19:54:27| Acc = [1%=0.0619, 5%=0.2979, 10%=0.5503] 
+INFO:mlp:|2024-06-05 19:54:36| Round=2 BestEpoch=132 MAE=0.0005 RMSE=0.0007 NMAE=0.1122 NRMSE=0.1330 Training_time=3.9 s 
+INFO:mlp:|2024-06-05 19:54:36| Acc = [1%=0.0592, 5%=0.2833, 10%=0.5331] 
+INFO:mlp:|2024-06-05 19:54:43| Round=3 BestEpoch=92 MAE=0.0005 RMSE=0.0007 NMAE=0.1057 NRMSE=0.1272 Training_time=2.7 s 
+INFO:mlp:|2024-06-05 19:54:43| Acc = [1%=0.0609, 5%=0.3007, 10%=0.5533] 
+INFO:mlp:|2024-06-05 19:54:43| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:54:43| MAE: 0.0005 ± 0.0000
+INFO:mlp:|2024-06-05 19:54:43| RMSE: 0.0007 ± 0.0000
+INFO:mlp:|2024-06-05 19:54:43| NMAE: 0.1083 ± 0.0028
+INFO:mlp:|2024-06-05 19:54:43| NRMSE: 0.1296 ± 0.0025
+INFO:mlp:|2024-06-05 19:54:43| Acc_1: 0.0607 ± 0.0011
+INFO:mlp:|2024-06-05 19:54:43| Acc_5: 0.2940 ± 0.0076
+INFO:mlp:|2024-06-05 19:54:43| Acc_10: 0.5456 ± 0.0089
+INFO:mlp:|2024-06-05 19:54:44| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:54:46| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 900, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f8761626be0>}
+INFO:mlp:|2024-06-05 19:54:46| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:55:01| Round=1 BestEpoch=158 MAE=0.0005 RMSE=0.0006 NMAE=0.0991 NRMSE=0.1188 Training_time=8.3 s 
+INFO:mlp:|2024-06-05 19:55:01| Acc = [1%=0.0677, 5%=0.3129, 10%=0.5718] 
+INFO:mlp:|2024-06-05 19:55:13| Round=2 BestEpoch=128 MAE=0.0005 RMSE=0.0006 NMAE=0.1039 NRMSE=0.1228 Training_time=6.7 s 
+INFO:mlp:|2024-06-05 19:55:13| Acc = [1%=0.0614, 5%=0.2994, 10%=0.5658] 
+INFO:mlp:|2024-06-05 19:55:24| Round=3 BestEpoch=107 MAE=0.0005 RMSE=0.0006 NMAE=0.0978 NRMSE=0.1180 Training_time=5.5 s 
+INFO:mlp:|2024-06-05 19:55:24| Acc = [1%=0.0678, 5%=0.3226, 10%=0.5873] 
+INFO:mlp:|2024-06-05 19:55:24| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:55:24| MAE: 0.0005 ± 0.0000
+INFO:mlp:|2024-06-05 19:55:24| RMSE: 0.0006 ± 0.0000
+INFO:mlp:|2024-06-05 19:55:24| NMAE: 0.1003 ± 0.0026
+INFO:mlp:|2024-06-05 19:55:24| NRMSE: 0.1199 ± 0.0021
+INFO:mlp:|2024-06-05 19:55:24| Acc_1: 0.0656 ± 0.0030
+INFO:mlp:|2024-06-05 19:55:24| Acc_5: 0.3116 ± 0.0095
+INFO:mlp:|2024-06-05 19:55:24| Acc_10: 0.5750 ± 0.0090
+INFO:mlp:|2024-06-05 19:55:25| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:56:24| {'seed': 0, 'device': 'cpu', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 5, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fe348625c40>}
+INFO:mlp:|2024-06-05 19:56:24| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:56:26| Round=1 BestEpoch=3 MAE=0.0017 RMSE=0.0020 NMAE=0.3410 NRMSE=0.3945 Training_time=0.0 s 
+INFO:mlp:|2024-06-05 19:56:26| Acc = [1%=0.0148, 5%=0.0729, 10%=0.1478] 
+INFO:mlp:|2024-06-05 19:56:29| Round=2 BestEpoch=71 MAE=0.0016 RMSE=0.0019 NMAE=0.3256 NRMSE=0.3757 Training_time=0.1 s 
+INFO:mlp:|2024-06-05 19:56:29| Acc = [1%=0.0173, 5%=0.0783, 10%=0.1540] 
+INFO:mlp:|2024-06-05 19:56:30| Round=3 BestEpoch=1 MAE=0.0016 RMSE=0.0020 NMAE=0.3330 NRMSE=0.3911 Training_time=0.0 s 
+INFO:mlp:|2024-06-05 19:56:30| Acc = [1%=0.0269, 5%=0.1325, 10%=0.2375] 
+INFO:mlp:|2024-06-05 19:56:33| Round=4 BestEpoch=82 MAE=0.0009 RMSE=0.0012 NMAE=0.1907 NRMSE=0.2292 Training_time=0.1 s 
+INFO:mlp:|2024-06-05 19:56:33| Acc = [1%=0.0327, 5%=0.1710, 10%=0.3355] 
+INFO:mlp:|2024-06-05 19:56:35| Round=5 BestEpoch=60 MAE=0.0013 RMSE=0.0016 NMAE=0.2565 NRMSE=0.3063 Training_time=0.1 s 
+INFO:mlp:|2024-06-05 19:56:35| Acc = [1%=0.0277, 5%=0.1359, 10%=0.2707] 
+INFO:mlp:|2024-06-05 19:56:35| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:56:35| MAE: 0.0014 ± 0.0003
+INFO:mlp:|2024-06-05 19:56:35| RMSE: 0.0018 ± 0.0003
+INFO:mlp:|2024-06-05 19:56:35| NMAE: 0.2894 ± 0.0578
+INFO:mlp:|2024-06-05 19:56:35| NRMSE: 0.3394 ± 0.0636
+INFO:mlp:|2024-06-05 19:56:35| Acc_1: 0.0239 ± 0.0067
+INFO:mlp:|2024-06-05 19:56:35| Acc_5: 0.1181 ± 0.0373
+INFO:mlp:|2024-06-05 19:56:35| Acc_10: 0.2291 ± 0.0712
+INFO:mlp:|2024-06-05 19:56:37| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:56:39| {'seed': 0, 'device': 'cpu', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 50, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fe762021d30>}
+INFO:mlp:|2024-06-05 19:56:39| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:56:54| Round=1 BestEpoch=500 MAE=0.0008 RMSE=0.0010 NMAE=0.1624 NRMSE=0.2001 Training_time=2.1 s 
+INFO:mlp:|2024-06-05 19:56:54| Acc = [1%=0.0464, 5%=0.2259, 10%=0.4193] 
+INFO:mlp:|2024-06-05 19:56:58| Round=2 BestEpoch=81 MAE=0.0007 RMSE=0.0009 NMAE=0.1461 NRMSE=0.1765 Training_time=0.3 s 
+INFO:mlp:|2024-06-05 19:56:58| Acc = [1%=0.0458, 5%=0.2259, 10%=0.4284] 
+INFO:mlp:|2024-06-05 19:57:12| Round=3 BestEpoch=500 MAE=0.0010 RMSE=0.0013 NMAE=0.2035 NRMSE=0.2458 Training_time=2.0 s 
+INFO:mlp:|2024-06-05 19:57:12| Acc = [1%=0.0365, 5%=0.1777, 10%=0.3386] 
+INFO:mlp:|2024-06-05 19:57:18| Round=4 BestEpoch=145 MAE=0.0008 RMSE=0.0010 NMAE=0.1600 NRMSE=0.1891 Training_time=0.6 s 
+INFO:mlp:|2024-06-05 19:57:18| Acc = [1%=0.0420, 5%=0.2001, 10%=0.3776] 
+INFO:mlp:|2024-06-05 19:57:32| Round=5 BestEpoch=500 MAE=0.0008 RMSE=0.0010 NMAE=0.1599 NRMSE=0.1975 Training_time=2.0 s 
+INFO:mlp:|2024-06-05 19:57:32| Acc = [1%=0.0459, 5%=0.2373, 10%=0.4443] 
+INFO:mlp:|2024-06-05 19:57:32| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:57:32| MAE: 0.0008 ± 0.0001
+INFO:mlp:|2024-06-05 19:57:32| RMSE: 0.0010 ± 0.0001
+INFO:mlp:|2024-06-05 19:57:32| NMAE: 0.1664 ± 0.0194
+INFO:mlp:|2024-06-05 19:57:32| NRMSE: 0.2018 ± 0.0235
+INFO:mlp:|2024-06-05 19:57:32| Acc_1: 0.0433 ± 0.0038
+INFO:mlp:|2024-06-05 19:57:32| Acc_5: 0.2134 ± 0.0216
+INFO:mlp:|2024-06-05 19:57:32| Acc_10: 0.4017 ± 0.0385
+INFO:mlp:|2024-06-05 19:57:34| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:57:36| {'seed': 0, 'device': 'cpu', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 100, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f90512eec10>}
+INFO:mlp:|2024-06-05 19:57:36| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:57:39| Round=1 BestEpoch=48 MAE=0.0007 RMSE=0.0009 NMAE=0.1474 NRMSE=0.1791 Training_time=0.4 s 
+INFO:mlp:|2024-06-05 19:57:39| Acc = [1%=0.0494, 5%=0.2337, 10%=0.4312] 
+INFO:mlp:|2024-06-05 19:57:42| Round=2 BestEpoch=66 MAE=0.0007 RMSE=0.0008 NMAE=0.1357 NRMSE=0.1610 Training_time=0.5 s 
+INFO:mlp:|2024-06-05 19:57:42| Acc = [1%=0.0456, 5%=0.2327, 10%=0.4471] 
+INFO:mlp:|2024-06-05 19:57:49| Round=3 BestEpoch=168 MAE=0.0008 RMSE=0.0010 NMAE=0.1624 NRMSE=0.1983 Training_time=1.2 s 
+INFO:mlp:|2024-06-05 19:57:49| Acc = [1%=0.0445, 5%=0.2108, 10%=0.4010] 
+INFO:mlp:|2024-06-05 19:57:54| Round=4 BestEpoch=133 MAE=0.0007 RMSE=0.0009 NMAE=0.1486 NRMSE=0.1777 Training_time=1.0 s 
+INFO:mlp:|2024-06-05 19:57:54| Acc = [1%=0.0447, 5%=0.2207, 10%=0.4192] 
+INFO:mlp:|2024-06-05 19:57:58| Round=5 BestEpoch=90 MAE=0.0007 RMSE=0.0009 NMAE=0.1386 NRMSE=0.1694 Training_time=0.7 s 
+INFO:mlp:|2024-06-05 19:57:58| Acc = [1%=0.0506, 5%=0.2614, 10%=0.5023] 
+INFO:mlp:|2024-06-05 19:57:58| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:57:58| MAE: 0.0007 ± 0.0000
+INFO:mlp:|2024-06-05 19:57:58| RMSE: 0.0009 ± 0.0001
+INFO:mlp:|2024-06-05 19:57:58| NMAE: 0.1465 ± 0.0093
+INFO:mlp:|2024-06-05 19:57:58| NRMSE: 0.1771 ± 0.0124
+INFO:mlp:|2024-06-05 19:57:58| Acc_1: 0.0470 ± 0.0025
+INFO:mlp:|2024-06-05 19:57:58| Acc_5: 0.2319 ± 0.0170
+INFO:mlp:|2024-06-05 19:57:58| Acc_10: 0.4402 ± 0.0346
+INFO:mlp:|2024-06-05 19:58:00| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:58:02| {'seed': 0, 'device': 'cpu', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fa448f3cd00>}
+INFO:mlp:|2024-06-05 19:58:02| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:58:08| Round=1 BestEpoch=72 MAE=0.0005 RMSE=0.0007 NMAE=0.1070 NRMSE=0.1285 Training_time=2.2 s 
+INFO:mlp:|2024-06-05 19:58:08| Acc = [1%=0.0619, 5%=0.2979, 10%=0.5503] 
+INFO:mlp:|2024-06-05 19:58:17| Round=2 BestEpoch=132 MAE=0.0005 RMSE=0.0007 NMAE=0.1122 NRMSE=0.1330 Training_time=3.9 s 
+INFO:mlp:|2024-06-05 19:58:17| Acc = [1%=0.0592, 5%=0.2833, 10%=0.5331] 
+INFO:mlp:|2024-06-05 19:58:24| Round=3 BestEpoch=92 MAE=0.0005 RMSE=0.0007 NMAE=0.1057 NRMSE=0.1272 Training_time=2.7 s 
+INFO:mlp:|2024-06-05 19:58:24| Acc = [1%=0.0609, 5%=0.3007, 10%=0.5533] 
+INFO:mlp:|2024-06-05 19:58:51| Round=4 BestEpoch=500 MAE=0.0005 RMSE=0.0007 NMAE=0.1083 NRMSE=0.1300 Training_time=14.9 s 
+INFO:mlp:|2024-06-05 19:58:51| Acc = [1%=0.0614, 5%=0.2976, 10%=0.5413] 
+INFO:mlp:|2024-06-05 19:58:58| Round=5 BestEpoch=100 MAE=0.0005 RMSE=0.0007 NMAE=0.1062 NRMSE=0.1281 Training_time=2.9 s 
+INFO:mlp:|2024-06-05 19:58:58| Acc = [1%=0.0651, 5%=0.3119, 10%=0.5778] 
+INFO:mlp:|2024-06-05 19:58:58| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 19:58:58| MAE: 0.0005 ± 0.0000
+INFO:mlp:|2024-06-05 19:58:58| RMSE: 0.0007 ± 0.0000
+INFO:mlp:|2024-06-05 19:58:58| NMAE: 0.1079 ± 0.0023
+INFO:mlp:|2024-06-05 19:58:58| NRMSE: 0.1294 ± 0.0020
+INFO:mlp:|2024-06-05 19:58:58| Acc_1: 0.0617 ± 0.0019
+INFO:mlp:|2024-06-05 19:58:58| Acc_5: 0.2983 ± 0.0091
+INFO:mlp:|2024-06-05 19:58:58| Acc_10: 0.5512 ± 0.0151
+INFO:mlp:|2024-06-05 19:59:00| ********************Experiment Success********************
+INFO:mlp:|2024-06-05 19:59:02| {'seed': 0, 'device': 'cpu', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'mlp', 'density': 0.05, 'train_size': 900, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7ff3291e4d00>}
+INFO:mlp:|2024-06-05 19:59:02| ********************Experiment Start********************
+INFO:mlp:|2024-06-05 19:59:17| Round=1 BestEpoch=158 MAE=0.0005 RMSE=0.0006 NMAE=0.0991 NRMSE=0.1188 Training_time=8.3 s 
+INFO:mlp:|2024-06-05 19:59:17| Acc = [1%=0.0677, 5%=0.3129, 10%=0.5718] 
+INFO:mlp:|2024-06-05 19:59:29| Round=2 BestEpoch=128 MAE=0.0005 RMSE=0.0006 NMAE=0.1039 NRMSE=0.1228 Training_time=6.6 s 
+INFO:mlp:|2024-06-05 19:59:29| Acc = [1%=0.0614, 5%=0.2994, 10%=0.5658] 
+INFO:mlp:|2024-06-05 19:59:40| Round=3 BestEpoch=107 MAE=0.0005 RMSE=0.0006 NMAE=0.0978 NRMSE=0.1180 Training_time=5.5 s 
+INFO:mlp:|2024-06-05 19:59:40| Acc = [1%=0.0678, 5%=0.3226, 10%=0.5873] 
+INFO:mlp:|2024-06-05 19:59:52| Round=4 BestEpoch=128 MAE=0.0005 RMSE=0.0006 NMAE=0.1000 NRMSE=0.1194 Training_time=6.6 s 
+INFO:mlp:|2024-06-05 19:59:52| Acc = [1%=0.0629, 5%=0.3154, 10%=0.5745] 
+INFO:mlp:|2024-06-05 20:00:02| Round=5 BestEpoch=107 MAE=0.0005 RMSE=0.0006 NMAE=0.0984 NRMSE=0.1184 Training_time=5.5 s 
+INFO:mlp:|2024-06-05 20:00:02| Acc = [1%=0.0650, 5%=0.3269, 10%=0.5976] 
+INFO:mlp:|2024-06-05 20:00:02| ********************Experiment Results:********************
+INFO:mlp:|2024-06-05 20:00:02| MAE: 0.0005 ± 0.0000
+INFO:mlp:|2024-06-05 20:00:02| RMSE: 0.0006 ± 0.0000
+INFO:mlp:|2024-06-05 20:00:02| NMAE: 0.0998 ± 0.0022
+INFO:mlp:|2024-06-05 20:00:02| NRMSE: 0.1195 ± 0.0017
+INFO:mlp:|2024-06-05 20:00:02| Acc_1: 0.0650 ± 0.0026
+INFO:mlp:|2024-06-05 20:00:02| Acc_5: 0.3154 ± 0.0094
+INFO:mlp:|2024-06-05 20:00:02| Acc_10: 0.5794 ± 0.0115
+INFO:mlp:|2024-06-05 20:00:04| ********************Experiment Success********************
+INFO:brp_nas:|2024-06-05 20:00:21| {'seed': 0, 'device': 'cpu', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'brp_nas', 'density': 0.05, 'train_size': 5, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 1, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fe35980ad60>}
+INFO:brp_nas:|2024-06-05 20:00:21| ********************Experiment Start********************
+INFO:brp_nas:|2024-06-05 20:00:33| {'seed': 0, 'device': 'mps', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'brp_nas', 'density': 0.05, 'train_size': 5, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 1, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fc5e9cdccd0>}
+INFO:brp_nas:|2024-06-05 20:00:33| ********************Experiment Start********************
+INFO:brp_nas:|2024-06-05 20:00:43| {'seed': 0, 'device': 'mps', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'brp_nas', 'density': 0.05, 'train_size': 5, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 1, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f98289b4cd0>}
+INFO:brp_nas:|2024-06-05 20:00:43| ********************Experiment Start********************
+INFO:brp_nas:|2024-06-05 20:01:05| Round=1 BestEpoch=5 MAE=0.0047 RMSE=0.0050 NMAE=0.9642 NRMSE=0.9683 Training_time=0.8 s 
+INFO:brp_nas:|2024-06-05 20:01:05| Acc = [1%=0.0000, 5%=0.0000, 10%=0.0000] 
+INFO:brp_nas:|2024-06-05 20:01:27| Round=2 BestEpoch=8 MAE=0.0031 RMSE=0.0035 NMAE=0.6265 NRMSE=0.6668 Training_time=0.7 s 
+INFO:brp_nas:|2024-06-05 20:01:27| Acc = [1%=0.0001, 5%=0.0021, 10%=0.0118] 
+INFO:brp_nas:|2024-06-05 20:01:59| Round=3 BestEpoch=28 MAE=0.0014 RMSE=0.0018 NMAE=0.2957 NRMSE=0.3431 Training_time=2.3 s 
+INFO:brp_nas:|2024-06-05 20:01:59| Acc = [1%=0.0169, 5%=0.0804, 10%=0.1809] 
+INFO:brp_nas:|2024-06-05 20:02:18| Round=4 BestEpoch=1 MAE=0.0015 RMSE=0.0019 NMAE=0.3053 NRMSE=0.3574 Training_time=0.1 s 
+INFO:brp_nas:|2024-06-05 20:02:18| Acc = [1%=0.0130, 5%=0.1116, 10%=0.2230] 
+INFO:brp_nas:|2024-06-05 20:02:37| Round=5 BestEpoch=3 MAE=0.0018 RMSE=0.0022 NMAE=0.3626 NRMSE=0.4251 Training_time=0.2 s 
+INFO:brp_nas:|2024-06-05 20:02:37| Acc = [1%=0.0225, 5%=0.1325, 10%=0.2526] 
+INFO:brp_nas:|2024-06-05 20:02:37| ********************Experiment Results:********************
+INFO:brp_nas:|2024-06-05 20:02:37| MAE: 0.0025 ± 0.0013
+INFO:brp_nas:|2024-06-05 20:02:37| RMSE: 0.0029 ± 0.0012
+INFO:brp_nas:|2024-06-05 20:02:37| NMAE: 0.5109 ± 0.2567
+INFO:brp_nas:|2024-06-05 20:02:37| NRMSE: 0.5522 ± 0.2384
+INFO:brp_nas:|2024-06-05 20:02:37| Acc_1: 0.0105 ± 0.0091
+INFO:brp_nas:|2024-06-05 20:02:37| Acc_5: 0.0653 ± 0.0550
+INFO:brp_nas:|2024-06-05 20:02:37| Acc_10: 0.1337 ± 0.1068
+INFO:brp_nas:|2024-06-05 20:02:39| ********************Experiment Success********************
+INFO:brp_nas:|2024-06-05 20:02:41| {'seed': 0, 'device': 'mps', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'brp_nas', 'density': 0.05, 'train_size': 50, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 1, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f9641cf6c10>}
+INFO:brp_nas:|2024-06-05 20:02:41| ********************Experiment Start********************
+INFO:brp_nas:|2024-06-05 20:04:51| Round=1 BestEpoch=73 MAE=0.0007 RMSE=0.0008 NMAE=0.1331 NRMSE=0.1586 Training_time=59.8 s 
+INFO:brp_nas:|2024-06-05 20:04:51| Acc = [1%=0.0347, 5%=0.2377, 10%=0.4597] 
+INFO:brp_nas:|2024-06-05 20:07:32| Round=2 BestEpoch=97 MAE=0.0006 RMSE=0.0008 NMAE=0.1177 NRMSE=0.1474 Training_time=79.4 s 
+INFO:brp_nas:|2024-06-05 20:07:32| Acc = [1%=0.0687, 5%=0.2812, 10%=0.5138] 
+INFO:brp_nas:|2024-06-05 20:13:48| Round=3 BestEpoch=251 MAE=0.0006 RMSE=0.0007 NMAE=0.1129 NRMSE=0.1438 Training_time=223.8 s 
+INFO:brp_nas:|2024-06-05 20:13:48| Acc = [1%=0.0690, 5%=0.2945, 10%=0.5597] 
+INFO:brp_nas:|2024-06-05 20:17:29| Round=4 BestEpoch=141 MAE=0.0006 RMSE=0.0008 NMAE=0.1229 NRMSE=0.1543 Training_time=119.7 s 
+INFO:brp_nas:|2024-06-05 20:17:29| Acc = [1%=0.0714, 5%=0.3016, 10%=0.5257] 
+INFO:brp_nas:|2024-06-05 20:19:41| Round=5 BestEpoch=72 MAE=0.0005 RMSE=0.0007 NMAE=0.1028 NRMSE=0.1267 Training_time=61.2 s 
+INFO:brp_nas:|2024-06-05 20:19:41| Acc = [1%=0.0856, 5%=0.3372, 10%=0.5579] 
+INFO:brp_nas:|2024-06-05 20:19:41| ********************Experiment Results:********************
+INFO:brp_nas:|2024-06-05 20:19:41| MAE: 0.0006 ± 0.0000
+INFO:brp_nas:|2024-06-05 20:19:41| RMSE: 0.0008 ± 0.0001
+INFO:brp_nas:|2024-06-05 20:19:41| NMAE: 0.1179 ± 0.0101
+INFO:brp_nas:|2024-06-05 20:19:41| NRMSE: 0.1461 ± 0.0110
+INFO:brp_nas:|2024-06-05 20:19:41| Acc_1: 0.0659 ± 0.0168
+INFO:brp_nas:|2024-06-05 20:19:41| Acc_5: 0.2904 ± 0.0322
+INFO:brp_nas:|2024-06-05 20:19:41| Acc_10: 0.5233 ± 0.0365
+INFO:brp_nas:|2024-06-05 20:19:42| ********************Experiment Success********************
+INFO:brp_nas:|2024-06-05 20:19:45| {'seed': 0, 'device': 'mps', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'brp_nas', 'density': 0.05, 'train_size': 100, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 1, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fcac94fec10>}
+INFO:brp_nas:|2024-06-05 20:19:45| ********************Experiment Start********************
+INFO:brp_nas:|2024-06-05 20:22:51| Round=1 BestEpoch=58 MAE=0.0006 RMSE=0.0007 NMAE=0.1168 NRMSE=0.1421 Training_time=96.0 s 
+INFO:brp_nas:|2024-06-05 20:22:51| Acc = [1%=0.0407, 5%=0.2248, 10%=0.4855] 
+INFO:brp_nas:|2024-06-05 20:30:19| Round=2 BestEpoch=185 MAE=0.0005 RMSE=0.0006 NMAE=0.0931 NRMSE=0.1247 Training_time=305.8 s 
+INFO:brp_nas:|2024-06-05 20:30:19| Acc = [1%=0.1164, 5%=0.4178, 10%=0.6528] 
+INFO:brp_nas:|2024-06-05 20:32:01| Round=3 BestEpoch=16 MAE=0.0014 RMSE=0.0018 NMAE=0.2924 NRMSE=0.3444 Training_time=27.0 s 
+INFO:brp_nas:|2024-06-05 20:32:01| Acc = [1%=0.0387, 5%=0.0945, 10%=0.1938] 
+INFO:brp_nas:|2024-06-05 20:38:30| Round=4 BestEpoch=155 MAE=0.0004 RMSE=0.0006 NMAE=0.0904 NRMSE=0.1166 Training_time=257.1 s 
+INFO:brp_nas:|2024-06-05 20:38:30| Acc = [1%=0.0894, 5%=0.4383, 10%=0.6372] 
+INFO:brp_nas:|2024-06-05 20:44:46| Round=5 BestEpoch=152 MAE=0.0004 RMSE=0.0006 NMAE=0.0878 NRMSE=0.1188 Training_time=247.8 s 
+INFO:brp_nas:|2024-06-05 20:44:46| Acc = [1%=0.0857, 5%=0.4653, 10%=0.6908] 
+INFO:brp_nas:|2024-06-05 20:44:46| ********************Experiment Results:********************
+INFO:brp_nas:|2024-06-05 20:44:46| MAE: 0.0007 ± 0.0004
+INFO:brp_nas:|2024-06-05 20:44:46| RMSE: 0.0009 ± 0.0005
+INFO:brp_nas:|2024-06-05 20:44:46| NMAE: 0.1361 ± 0.0788
+INFO:brp_nas:|2024-06-05 20:44:46| NRMSE: 0.1693 ± 0.0880
+INFO:brp_nas:|2024-06-05 20:44:46| Acc_1: 0.0742 ± 0.0301
+INFO:brp_nas:|2024-06-05 20:44:46| Acc_5: 0.3281 ± 0.1444
+INFO:brp_nas:|2024-06-05 20:44:46| Acc_10: 0.5320 ± 0.1830
+INFO:brp_nas:|2024-06-05 20:44:48| ********************Experiment Success********************
+INFO:brp_nas:|2024-06-05 20:44:51| {'seed': 0, 'device': 'mps', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'brp_nas', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 1, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f90e125ec70>}
+INFO:brp_nas:|2024-06-05 20:44:51| ********************Experiment Start********************
+INFO:brp_nas:|2024-06-05 22:40:49| Round=1 BestEpoch=154 MAE=0.0002 RMSE=0.0004 NMAE=0.0489 NRMSE=0.0746 Training_time=5139.6 s 
+INFO:brp_nas:|2024-06-05 22:40:49| Acc = [1%=0.2095, 5%=0.6930, 10%=0.8890] 
+INFO:brp_nas:|2024-06-05 23:24:59| Round=2 BestEpoch=169 MAE=0.0002 RMSE=0.0004 NMAE=0.0499 NRMSE=0.0750 Training_time=2329.8 s 
+INFO:brp_nas:|2024-06-05 23:24:59| Acc = [1%=0.2382, 5%=0.6451, 10%=0.8517] 
+INFO:brp_nas:|2024-06-05 23:49:31| Round=3 BestEpoch=130 MAE=0.0002 RMSE=0.0004 NMAE=0.0479 NRMSE=0.0764 Training_time=1144.2 s 
+INFO:brp_nas:|2024-06-05 23:49:31| Acc = [1%=0.2435, 5%=0.7143, 10%=0.8807] 
+INFO:brp_nas:|2024-06-06 00:19:10| Round=4 BestEpoch=177 MAE=0.0002 RMSE=0.0004 NMAE=0.0506 NRMSE=0.0752 Training_time=1445.2 s 
+INFO:brp_nas:|2024-06-06 00:19:10| Acc = [1%=0.2298, 5%=0.6574, 10%=0.8726] 
+INFO:brp_nas:|2024-06-06 00:42:34| Round=5 BestEpoch=106 MAE=0.0003 RMSE=0.0004 NMAE=0.0525 NRMSE=0.0787 Training_time=852.9 s 
+INFO:brp_nas:|2024-06-06 00:42:34| Acc = [1%=0.2025, 5%=0.6433, 10%=0.8392] 
+INFO:brp_nas:|2024-06-06 00:42:34| ********************Experiment Results:********************
+INFO:brp_nas:|2024-06-06 00:42:34| MAE: 0.0002 ± 0.0000
+INFO:brp_nas:|2024-06-06 00:42:34| RMSE: 0.0004 ± 0.0000
+INFO:brp_nas:|2024-06-06 00:42:34| NMAE: 0.0500 ± 0.0015
+INFO:brp_nas:|2024-06-06 00:42:34| NRMSE: 0.0760 ± 0.0015
+INFO:brp_nas:|2024-06-06 00:42:34| Acc_1: 0.2247 ± 0.0161
+INFO:brp_nas:|2024-06-06 00:42:34| Acc_5: 0.6706 ± 0.0282
+INFO:brp_nas:|2024-06-06 00:42:34| Acc_10: 0.8666 ± 0.0185
+INFO:brp_nas:|2024-06-06 00:42:36| ********************Experiment Success********************
+INFO:brp_nas:|2024-06-06 00:42:39| {'seed': 0, 'device': 'mps', 'rounds': 5, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'brp_nas', 'density': 0.05, 'train_size': 900, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 0, 'path': './datasets/', 'bs': 1, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fabb8de9d90>}
+INFO:brp_nas:|2024-06-06 00:42:39| ********************Experiment Start********************
+INFO:brp_nas:|2024-06-06 01:34:19| Round=1 BestEpoch=106 MAE=0.0002 RMSE=0.0003 NMAE=0.0377 NRMSE=0.0569 Training_time=2428.4 s 
+INFO:brp_nas:|2024-06-06 01:34:19| Acc = [1%=0.2712, 5%=0.7498, 10%=0.9004] 
+INFO:brp_nas:|2024-06-06 02:27:25| Round=2 BestEpoch=103 MAE=0.0002 RMSE=0.0004 NMAE=0.0457 NRMSE=0.0714 Training_time=2347.4 s 
+INFO:brp_nas:|2024-06-06 02:27:25| Acc = [1%=0.2597, 5%=0.6910, 10%=0.8572] 
+INFO:brp_nas:|2024-06-06 03:48:33| Round=3 BestEpoch=137 MAE=0.0002 RMSE=0.0003 NMAE=0.0415 NRMSE=0.0660 Training_time=4192.5 s 
+INFO:brp_nas:|2024-06-06 03:48:33| Acc = [1%=0.2699, 5%=0.7310, 10%=0.8801] 
+INFO:brp_nas:|2024-06-06 05:23:02| Round=4 BestEpoch=178 MAE=0.0002 RMSE=0.0004 NMAE=0.0464 NRMSE=0.0730 Training_time=4903.2 s 
+INFO:brp_nas:|2024-06-06 05:23:02| Acc = [1%=0.2547, 5%=0.7062, 10%=0.8678] 
+INFO:brp_nas:|2024-06-06 06:39:36| Round=5 BestEpoch=116 MAE=0.0002 RMSE=0.0004 NMAE=0.0465 NRMSE=0.0715 Training_time=3266.0 s 
+INFO:brp_nas:|2024-06-06 06:39:36| Acc = [1%=0.2432, 5%=0.6852, 10%=0.8644] 
+INFO:brp_nas:|2024-06-06 06:39:36| ********************Experiment Results:********************
+INFO:brp_nas:|2024-06-06 06:39:36| MAE: 0.0002 ± 0.0000
+INFO:brp_nas:|2024-06-06 06:39:36| RMSE: 0.0004 ± 0.0000
+INFO:brp_nas:|2024-06-06 06:39:36| NMAE: 0.0436 ± 0.0035
+INFO:brp_nas:|2024-06-06 06:39:36| NRMSE: 0.0677 ± 0.0059
+INFO:brp_nas:|2024-06-06 06:39:36| Acc_1: 0.2598 ± 0.0104
+INFO:brp_nas:|2024-06-06 06:39:36| Acc_5: 0.7126 ± 0.0244
+INFO:brp_nas:|2024-06-06 06:39:36| Acc_10: 0.8740 ± 0.0152
+INFO:brp_nas:|2024-06-06 06:39:38| ********************Experiment Success********************

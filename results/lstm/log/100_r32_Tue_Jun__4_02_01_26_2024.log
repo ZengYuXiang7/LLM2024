@@ -1,0 +1,17 @@
+INFO:lstm:|2024-06-04 02:01:26| {'seed': 0, 'device': 'cpu', 'rounds': 3, 'epochs': 500, 'patience': 30, 'dataset': 'cpu', 'model': 'lstm', 'density': 0.05, 'train_size': 100, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 1, 'path': './datasets/', 'bs': 32, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7f83b82911c0>}
+INFO:lstm:|2024-06-04 02:01:26| ********************Experiment Start********************
+INFO:lstm:|2024-06-04 02:02:54| Round=1 BestEpoch=317 MAE=0.0005 RMSE=0.0007 NMAE=0.1090 NRMSE=0.1294 Training_time=54.2 s 
+INFO:lstm:|2024-06-04 02:02:54| Acc = [1%=0.0663, 5%=0.3040, 10%=0.5525] 
+INFO:lstm:|2024-06-04 02:03:08| Round=2 BestEpoch=105 MAE=0.0005 RMSE=0.0007 NMAE=0.1070 NRMSE=0.1269 Training_time=1.1 s 
+INFO:lstm:|2024-06-04 02:03:08| Acc = [1%=0.0654, 5%=0.3088, 10%=0.5680] 
+INFO:lstm:|2024-06-04 02:06:10| Round=3 BestEpoch=500 MAE=0.0006 RMSE=0.0007 NMAE=0.1161 NRMSE=0.1435 Training_time=5.7 s 
+INFO:lstm:|2024-06-04 02:06:10| Acc = [1%=0.0547, 5%=0.2975, 10%=0.5767] 
+INFO:lstm:|2024-06-04 02:06:10| ********************Experiment Results:********************
+INFO:lstm:|2024-06-04 02:06:10| MAE: 0.0005 ± 0.0000
+INFO:lstm:|2024-06-04 02:06:10| RMSE: 0.0007 ± 0.0000
+INFO:lstm:|2024-06-04 02:06:10| NMAE: 0.1107 ± 0.0039
+INFO:lstm:|2024-06-04 02:06:10| NRMSE: 0.1332 ± 0.0073
+INFO:lstm:|2024-06-04 02:06:10| Acc_1: 0.0621 ± 0.0053
+INFO:lstm:|2024-06-04 02:06:10| Acc_5: 0.3035 ± 0.0046
+INFO:lstm:|2024-06-04 02:06:10| Acc_10: 0.5657 ± 0.0100
+INFO:lstm:|2024-06-04 02:06:11| ********************Experiment Success********************
