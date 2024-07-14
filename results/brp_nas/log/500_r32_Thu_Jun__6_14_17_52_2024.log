@@ -1,8 +1,0 @@
-INFO:brp_nas:|2024-06-06 14:17:52| {'seed': 0, 'device': 'mps', 'rounds': 5, 'epochs': 500, 'patience': 10, 'dataset': 'cpu', 'model': 'brp_nas', 'density': 0.05, 'train_size': 500, 'debug': 0, 'saved': 1, 'record': 1, 'verbose': 1, 'experiment': 1, 'path': './datasets/', 'bs': 1, 'lr': 0.001, 'decay': 0.001, 'loss_func': 'L1Loss', 'optim': 'AdamW', 'program_test': 0, 'logger': 'Experiment', 'dimension': 32, 'order': 3, 'ablation': 0, 'classification': 0, 'config_path': '/Users/zengyuxiang/Documents/科研代码/LLM2024/utils/../default_config.yaml', 'log': <utils.logger.Logger object at 0x7fbc61466c40>}
-INFO:brp_nas:|2024-06-06 14:17:52| ********************Experiment Start********************
-INFO:brp_nas:|2024-06-06 14:41:51| Round=1 BestEpoch=80 MAE=0.0003 RMSE=0.0004 NMAE=0.0560 NRMSE=0.0802 Training_time=1282.4 s 
-INFO:brp_nas:|2024-06-06 14:41:51| Acc = [1%=0.1514, 5%=0.6222, 10%=0.8681] 
-INFO:brp_nas:|2024-06-06 14:55:45| Round=2 BestEpoch=62 MAE=0.0003 RMSE=0.0004 NMAE=0.0544 NRMSE=0.0801 Training_time=668.9 s 
-INFO:brp_nas:|2024-06-06 14:55:45| Acc = [1%=0.2090, 5%=0.6559, 10%=0.8589] 
-INFO:brp_nas:|2024-06-06 15:07:00| Round=3 BestEpoch=65 MAE=0.0003 RMSE=0.0004 NMAE=0.0573 NRMSE=0.0832 Training_time=552.8 s 
-INFO:brp_nas:|2024-06-06 15:07:00| Acc = [1%=0.1772, 5%=0.6445, 10%=0.8344] 

@@ -13,13 +13,9 @@ import textwrap
 class MetricsPlotter:
     def __init__(self, filename, args):
         self.args = args
-        if args.experiment:
-            self.fileroot = f'./results/{args.model}/fig/'
-            makedir(self.fileroot)
-            self.filename = filename
-        else:
-            self.fileroot = f'./'
-            self.filename = 'None'
+        self.fileroot = f'./results/{args.model}/' + time.strftime('%Y%m%d', time.localtime(time.time())) + '/fig/'
+        makedir(self.fileroot)
+        self.filename = filename
         self.all_rounds_results = []
         self.one_round_results = collections.defaultdict(list)
 
@@ -64,7 +60,4 @@ class MetricsPlotter:
         plt.figtext(0.5, -0.2, combined_text, ha='center', va='center')
         plt.tight_layout()
         ts = time.asctime().replace(' ', '_').replace(':', '_')
-        if self.args.experiment:
-            plt.savefig(self.fileroot + self.filename + f'_{ts}.pdf', bbox_inches='tight', pad_inches=0.5)
-        else:
-            plt.savefig('./None.pdf', bbox_inches='tight', pad_inches=0.5)
+        plt.savefig(self.fileroot + self.filename + f'_{ts}.pdf', bbox_inches='tight', pad_inches=0.5)

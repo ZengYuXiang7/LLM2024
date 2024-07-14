@@ -9,12 +9,14 @@ import torch
 
 from tqdm import *
 
+from baselines.birnn import BiRNN
 from baselines.brp_nas import BRP_NAS
 from baselines.gru import GRU
 from baselines.lstm import LSTM
 from baselines.mlp import MLP
 from data import experiment, DataModule
 from baselines.gnn import GraphSAGEConv
+from modules.inductive import InductiveModel
 from utils.config import get_config
 from utils.logger import Logger
 from utils.metrics import ErrorMetrics
@@ -29,25 +31,32 @@ torch.set_default_dtype(torch.float32)
 
 
 class Model(torch.nn.Module):
-    def __init__(self, input_size, args):
+    def __init__(self, data, args):
         super().__init__()
         self.args = args
-        self.input_size = input_size
-        self.hidden_size = args.dimension
-        if args.model == 'brp_nas':
+        self.input_size = data.x.shape[-1]
+        self.hidden_size = args.rank
+        if args.model == 'ours':
+            self.model = InductiveModel(args)
+
+        elif args.model == 'brp_nas':
             self.model = BRP_NAS(args)
 
         elif args.model == 'gcn':
-            self.model = GraphSAGEConv(6, self.hidden_size, args.order, self.args)
+            self.model = GraphSAGEConv(6, args.rank, 6, self.args)
 
         elif args.model == 'mlp':
             self.model = MLP(6, self.hidden_size, 1, args)
 
         elif args.model == 'lstm':
-            self.model = LSTM(54, self.hidden_size, 1, args)
+            self.model = LSTM(6, self.hidden_size, 1, args)
 
         elif args.model == 'gru':
-            self.model = GRU(54, self.hidden_size, 1, args)
+            self.model = GRU(6, self.hidden_size, 1, args)
+
+        elif args.model == 'birnn':
+            self.model = BiRNN(6, self.hidden_size, 1, args)
+
         else:
             raise ValueError(f"Unsupported model type: {args.model}")
 
@@ -68,6 +77,7 @@ class Model(torch.nn.Module):
         t1 = time.time()
         for train_Batch in tqdm(dataModule.train_loader):
             graph, features, value = train_Batch
+            # print(type(graph), type(features), type(value))
             graph, features, value = graph.to(self.args.device), features.to(self.args.device), value.to(self.args.device)
             pred = self.forward(graph, features)
             loss = self.loss_function(pred, value)
@@ -79,40 +89,27 @@ class Model(torch.nn.Module):
         torch.set_grad_enabled(False)
         return loss, t2 - t1
 
-    def valid_one_epoch(self, dataModule):
+    def evaluate_one_epoch(self, dataModule, mode='valid'):
         val_loss = 0.
         preds = []
         reals = []
-        for valid_batch in tqdm(dataModule.valid_loader):
-            graph, features, value = valid_batch
+        dataloader = dataModule.valid_loader if mode == 'valid' else dataModule.test_loader
+        for batch in tqdm(dataloader):
+            graph, features, value = batch
             graph, features, value = graph.to(self.args.device), features.to(self.args.device), value.to(self.args.device)
             pred = self.forward(graph, features)
-            val_loss += self.loss_function(pred, value.long())
+            if mode == 'valid':
+                val_loss += self.loss_function(pred, value)
             if self.args.classification:
                 pred = torch.max(pred, 1)[1]  # 获取预测的类别标签
             preds.append(pred)
             reals.append(value)
         reals = torch.cat(reals, dim=0)
         preds = torch.cat(preds, dim=0)
-        self.scheduler.step(val_loss)
-        valid_error = ErrorMetrics(reals * dataModule.max_value, preds * dataModule.max_value, self.args)
-        return valid_error
-
-    def test_one_epoch(self, dataModule):
-        preds = []
-        reals = []
-        for test_batch in tqdm(dataModule.test_loader):
-            graph, features, value = test_batch
-            graph, features, value = graph.to(self.args.device), features.to(self.args.device), value.to(self.args.device)
-            pred = self.forward(graph, features)
-            if self.args.classification:
-                pred = torch.max(pred, 1)[1]  # 获取预测的类别标签
-            preds.append(pred)
-            reals.append(value)
-        reals = torch.cat(reals, dim=0)
-        preds = torch.cat(preds, dim=0)
-        test_error = ErrorMetrics(reals * dataModule.max_value, preds * dataModule.max_value, self.args)
-        return test_error
+        if mode == 'valid':
+            self.scheduler.step(val_loss)
+        metrics_error = ErrorMetrics(reals * dataModule.max_value, preds * dataModule.max_value, self.args)
+        return metrics_error
 
 
 def RunOnce(args, runId, log):
@@ -125,28 +122,37 @@ def RunOnce(args, runId, log):
     model = Model(datamodule, args)
     monitor = EarlyStopping(args)
 
-    # Setup training tool
-    model.setup_optimizer(args)
-    train_time = []
-    for epoch in range(args.epochs):
-        epoch_loss, time_cost = model.train_one_epoch(datamodule)
-        valid_error = model.valid_one_epoch(datamodule)
-        monitor.track_one_epoch(epoch, model, valid_error)
-        train_time.append(time_cost)
-        log.show_epoch_error(runId, epoch, monitor, epoch_loss, valid_error, train_time)
-        plotter.append_epochs(valid_error)
-        if monitor.early_stop:
-            break
-    model.load_state_dict(monitor.best_model)
-    sum_time = sum(train_time[: monitor.best_epoch])
-    results = model.test_one_epoch(datamodule)
-    log.show_test_error(runId, monitor, results, sum_time)
-
-    # Save the best model parameters
-    makedir('./checkpoints')
-    model_path = f'./checkpoints/{args.model}_{args.seed}.pt'
-    torch.save(monitor.best_model, model_path)
-    # log.only_print(f'Model parameters saved to {model_path}')
+    try:
+        model_path = f'./checkpoints/{log_filename}_round_{runId}.pt'
+        model.load_state_dict(torch.load(model_path))
+        results = model.evaluate_one_epoch(datamodule, 'test')
+        if not args.classification:
+            log.only_print(f'MAE={results["MAE"]:.4f} RMSE={results["RMSE"]:.4f} NMAE={results["NMAE"]:.4f} NRMSE={results["NRMSE"]:.4f}')
+        else:
+            log.only_print(f'Acc={results["Acc"]:.4f} F1={results["F1"]:.4f} Precision={results["P"]:.4f} Recall={results["Recall"]:.4f}')
+        args.record = False
+    except:
+        # Setup training tool
+        model.setup_optimizer(args)
+        train_time = []
+        for epoch in range(args.epochs):
+            epoch_loss, time_cost = model.train_one_epoch(datamodule)
+            valid_error = model.evaluate_one_epoch(datamodule, 'valid')
+            monitor.track_one_epoch(epoch, model, valid_error)
+            train_time.append(time_cost)
+            log.show_epoch_error(runId, epoch, monitor, epoch_loss, valid_error, train_time)
+            plotter.append_epochs(valid_error)
+            if monitor.early_stop:
+                break
+        model.load_state_dict(monitor.best_model)
+        sum_time = sum(train_time[: monitor.best_epoch])
+        results = model.evaluate_one_epoch(datamodule, 'test')
+        log.show_test_error(runId, monitor, results, sum_time)
+        # Save the best model parameters
+        makedir('./checkpoints')
+        model_path = f'./checkpoints/{log_filename}_round_{runId}.pt'
+        torch.save(monitor.best_model, model_path)
+        log.only_print(f'Model parameters saved to {model_path}')
     return results
 
 
@@ -167,8 +173,8 @@ def RunExperiments(log, args):
 
     if args.record:
         log.save_result(metrics)
-        plotter.record_metric(metrics)
 
+    plotter.record_metric(metrics)
     log('*' * 20 + 'Experiment Success' + '*' * 20)
 
     return metrics
@@ -179,9 +185,10 @@ if __name__ == '__main__':
     set_settings(args)
 
     # logger plotter
-    filename = f'{args.train_size}_r{args.dimension}'
-    log = Logger(filename, args)
-    plotter = MetricsPlotter(filename, args)
+    exper_detail = f"Dataset : {args.dataset.upper()}, Model : {args.model}, Train_size : {args.train_size}, Bs : {args.bs}, Rank : {args.rank}"
+    log_filename = f'Trainsize{args.train_size}_Rank{args.rank}'
+    log = Logger(log_filename, exper_detail, args)
+    plotter = MetricsPlotter(log_filename, args)
     args.log = log
     log(str(args.__dict__))
 

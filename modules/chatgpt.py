@@ -1,9 +1,12 @@
+import os
+import pickle
+
 from utils.config import get_config
 from utils.utils import get_file_name
 import openai
 
 openai.api_base = 'https://api.openai-proxy.org/v1'
-openai.api_key = 'sk-jrgIM6P2VqRkWIH1BcwfUCY1vulqfrsBaU0d7i7bFYFy502l'
+openai.api_key = 'sk-IMnRtlj5qFJCjd9WYh9yGLZnWv7r8mn0O7anskka7Ve4Q2XX@29805'
 
 class ChatGPT:
     def __init__(self, args):
@@ -17,7 +20,6 @@ class ChatGPT:
             messages=[
                 {"role": "system", "content": user_input},
             ],
-            # 2024:1:6 谢若天师兄提示
             temperature=0.7,  # 调整随机性
             max_tokens=150,  # 输出的最大长度
             frequency_penalty=0.5,  # 减少重复
@@ -34,12 +36,7 @@ class NAS_ChatGPT:
         self.gpt = ChatGPT(args)
 
     def get_device_more_info(self, input_device):
-        prompt = None
-        if self.args.dataset_type == 'cpu':
-            prompt = self.contructing_cpu_promote(input_device)
-        elif self.args.dataset_type == 'gpu':
-            prompt = self.contructing_gpu_promote(input_device)
-
+        prompt = self.contructing_cpu_promote(input_device)
         model_reply = self.gpt.chat_once(prompt)
         return model_reply
 
@@ -53,32 +50,31 @@ class NAS_ChatGPT:
         pre_str = "You are now a search engines, and required to provide the inquired information of the given processer.\n"
         input_device = 'The processer is ' + input_device + '.\n'
         output_format = "The inquired information is : Maximum Turbo Boost Frequency, Number of Cores, Number of Threads, Level 3 Cache, Maximum Memory Bandwidth.\n \
-                        And please output them in form of: Maximum_Turbo_Boost_Frequency::Number_of_Cores::Number_of_Threads::Level_3_Cache::Maximum_Memory_Bandwidth. \n  \
-                        please output only the content in the form above, i.e., %.2lf GHz::%d cores::%d Threads::%.2lf MB::%.1lf GB/s\n, \
-                        but no other thing else, no reasoning, no index.\n\n"
-        prompt = pre_str + input_device + output_format
-        # print(prompt)
-        return prompt
-
-    def contructing_gpu_promote(self, input_device):
-        """
-            GPU
-            流处理器数量::核芯频率::显存::位宽
-            Stream processor count, Core clock frequency, Video memory, Memory bus width
-            Stream_processor_count::Core_clock_frequency::Video_memory::Memory_bus_width
-        """
-        pre_str = "You are now a search engines, and required to provide the inquired information of the given processer.\n"
-        input_device = 'The processer is ' + input_device + '.\n'
-        output_format = "The inquired information is : Stream processor count, Core clock frequency, Video memory, Memory bus width\n \
-                         And please output them in form of: Stream_processor_count::Core_clock_frequency::Video_memory::Memory_bus_width, \
-                         please output only the content in the form above, i.e., %d ::%d MHz::%d GB::%d-bit\n, \
-                         but no other thing else, no reasoning, no index, only number.\n\n"
+                        And please output them in form of: [Maximum_Turbo_Boost_Frequency, Number_of_Cores, Number_of_Threads, Level_3_Cache, Maximum_Memory_Bandwidth]. \n  \
+                        please output only the content in the form above, i.e., [%.2lf, %d, %d, %.2lf, %.2lf]\n, \
+                        only number, but no other thing else, no unit symbol, no reasoning, no index.\n\n"
         prompt = pre_str + input_device + output_format
         return prompt
 
 
 if __name__ == '__main__':
     args = get_config()
-    llm = ChatGPT(args)
-    output = llm.chat_once('你好！')
-    print(output)
+    # chat once
+    # llm = ChatGPT(args)
+    # output = llm.chat_once('你好！')
+
+    # NAS llm
+    llm = NAS_ChatGPT(args)
+    device_name = 'core-i7-7820x'
+    str_list = llm.get_device_more_info(device_name)
+    print("str : ", str_list)
+    import ast
+    list_obj = ast.literal_eval(str_list)
+    list_obj = list(list_obj)
+    print("list : ", list_obj)
+
+    os.makedirs('./agu', exist_ok=True)
+    # 将列表写入文件
+    with open(f'./agu/{device_name}.pkl', 'wb') as f:
+        pickle.dump(list_obj, f)
+    print('Done!')

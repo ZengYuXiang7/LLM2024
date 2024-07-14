@@ -67,6 +67,7 @@ class GraphConvolution(torch.torch.nn.Module):
         else:
             raise ValueError(f'Unknown initialization type: {init_type}')
 
+
 class GCN(torch.nn.Module):
     def __init__(self, input_dim, hidden_dim, num_layers, dropout, args):
         super(GCN, self).__init__()
@@ -77,6 +78,7 @@ class GCN(torch.nn.Module):
         self.dropout_ratio = dropout
         weight_init = 'thomas'
         bias_init = 'thomas'
+
         self.gcn = torch.nn.ModuleList()
         self.norm = torch.nn.ModuleList()
         self.act = torch.nn.ModuleList()

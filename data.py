@@ -9,7 +9,11 @@ from torch.utils.data import DataLoader
 from modules.latency_data import get_matrix_and_ops, get_adjacency_and_features
 from utils.config import get_config
 from utils.logger import Logger
+from utils.plotter import MetricsPlotter
 from utils.utils import set_settings
+
+import dgl
+from scipy.sparse import csr_matrix
 
 
 class experiment:
@@ -35,6 +39,8 @@ class experiment:
             for key, value in data[i].items():
                 x.append(list(key))
                 y.append(value)
+        x = np.array(x)
+        y = np.array(y)
         return x, y
 
     def get_pytorch_index(self, data):
@@ -84,9 +90,6 @@ class DataModule:
         return train_x, train_y, valid_x, valid_y, test_x, test_y, max_value
 
 
-import dgl
-from scipy.sparse import csr_matrix
-
 class TensorDataset(torch.utils.data.Dataset):
     def __init__(self, x, y, args):
         self.args = args
@@ -99,11 +102,22 @@ class TensorDataset(torch.utils.data.Dataset):
     def __getitem__(self, idx):
         key, value = self.x[idx], self.y[idx]
         value = torch.tensor(value).float()
-        if self.args.model == 'gcn':
+        if self.args.model == 'ours':
             graph, label = get_matrix_and_ops(key)
             graph, features = get_adjacency_and_features(graph, label)
+            key = torch.tensor(key).float()
+            return graph, key, value
+        elif self.args.model == 'gcn':
+            graph, label = get_matrix_and_ops(key)
+            graph, features = get_adjacency_and_features(graph, label)
+            # print(graph)
+            # print(features)
+            # print(csr_matrix(graph))
+            # exit()
             graph = dgl.from_scipy(csr_matrix(graph))
             graph = dgl.to_bidirected(graph)
+            graph.ndata['features'] = torch.as_tensor(features)
+            features = torch.tensor(features).float()
             return graph, features, value
         elif self.args.model == 'brp_nas':
             graph, label = get_matrix_and_ops(key)
@@ -111,19 +125,24 @@ class TensorDataset(torch.utils.data.Dataset):
             graph = torch.tensor(graph).float()
             features = torch.tensor(features).float()
             return graph, features, value
-        elif self.args.model == 'mlp':
+        elif self.args.model in ['mlp', 'lstm', 'gru']:
             key = torch.tensor(key).float() / 5
+            return None, key, value
+        elif self.args.model == 'birnn':
+            key = torch.tensor(key).float()
             return None, key, value
 
 
 def custom_collate_fn(batch, args):
     from torch.utils.data.dataloader import default_collate
     graphs, features, values = zip(*batch)
-    if args.model == 'gcn':
+    if args.model == 'ours':
+        batched_graph = torch.tensor(graphs)
+    elif args.model == 'gcn':
         batched_graph = dgl.batch(graphs)
     elif args.model == 'brp_nas':
         batched_graph = default_collate(graphs)
-    elif args.model == 'mlp':
+    elif args.model in ['mlp', 'lstm', 'gru', 'birnn']:
         batched_graph = torch.zeros(len(features))
     features = default_collate(features)
     values = default_collate(values)
@@ -170,9 +189,15 @@ def get_dataloaders(train_set, valid_set, test_set, args):
 if __name__ == '__main__':
     args = get_config()
     set_settings(args)
-    log = Logger(args)
+
+    # logger plotter
+    exper_detail = f"Dataset : {args.dataset.upper()}, Model : {args.model}, Train_size : {args.train_size}"
+    log_filename = f'{args.train_size}_r{args.dimension}'
+    log = Logger(log_filename, exper_detail, args)
+    plotter = MetricsPlotter(log_filename, args)
     args.log = log
-    log(str(args))
+    log(str(args.__dict__))
+
     exper = experiment(args)
     datamodule = DataModule(exper, args)
     for train_batch in datamodule.train_loader:
